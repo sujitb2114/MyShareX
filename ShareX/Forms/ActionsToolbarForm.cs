@@ -94,7 +94,7 @@ namespace ShareX
                 GripStyle = ToolStripGripStyle.Hidden,
                 Location = new Point(1, 1),
                 Margin = new Padding(1),
-                MinimumSize = new Size(10, 30),
+                MinimumSize = new Size(30, 90),
                 Padding = new Padding(0, 1, 0, 0),
                 Renderer = new ToolStripRoundedEdgeRenderer(),
                 TabIndex = 0,

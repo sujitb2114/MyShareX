@@ -59,7 +59,7 @@ namespace ShareX
 
         public SupportedLanguage Language = SupportedLanguage.Automatic;
         public bool ShowTray = true;
-        public bool SilentRun = false;
+        public bool SilentRun = true;
         public bool TrayIconProgressEnabled = true;
         public bool TaskbarProgressEnabled = true;
         public bool UseWhiteShareXIcon = false;

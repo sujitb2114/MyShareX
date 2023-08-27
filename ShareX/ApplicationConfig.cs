@@ -303,8 +303,7 @@ namespace ShareX
 
         #region Actions toolbar
 
-        public List<HotkeyType> ActionsToolbarList = new List<HotkeyType>() { HotkeyType.RectangleRegion, HotkeyType.PrintScreen, HotkeyType.ScreenRecorder,
-            HotkeyType.None, HotkeyType.FileUpload, HotkeyType.ClipboardUploadWithContentViewer, HotkeyType.OpenMainWindow };
+        public List<HotkeyType> ActionsToolbarList = new List<HotkeyType>() { HotkeyType.None, HotkeyType.RectangleRegion, HotkeyType.OpenMainWindow };
 
         public bool ActionsToolbarRunAtStartup = true;
 

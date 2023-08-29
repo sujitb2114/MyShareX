@@ -327,7 +327,7 @@ namespace ShareX
                         DisplayStyle = ToolStripItemDisplayStyle.Image,
                         Image = TaskHelpers.FindMenuIcon(action)
                     };
-                    tsMain.ImageScalingSize = new Size(24, 24);
+                    tsMain.ImageScalingSize = new Size(36, 36);
 
                     tsb.Click += async (sender, e) =>
                     {

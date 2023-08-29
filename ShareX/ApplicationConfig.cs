@@ -58,7 +58,7 @@ namespace ShareX
         #region General
 
         public SupportedLanguage Language = SupportedLanguage.Automatic;
-        public bool ShowTray = true;
+        public bool ShowTray = false;
         public bool SilentRun = true;
         public bool TrayIconProgressEnabled = true;
         public bool TaskbarProgressEnabled = true;
@@ -303,7 +303,7 @@ namespace ShareX
 
         #region Actions toolbar
 
-        public List<HotkeyType> ActionsToolbarList = new List<HotkeyType>() { HotkeyType.None, HotkeyType.RectangleRegion, HotkeyType.OpenMainWindow };
+        public List<HotkeyType> ActionsToolbarList = new List<HotkeyType>() { HotkeyType.None, HotkeyType.RectangleRegion, HotkeyType.ToggleTrayMenu };
 
         public bool ActionsToolbarRunAtStartup = true;
 

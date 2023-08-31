@@ -58,8 +58,8 @@ namespace ShareX
         #region General
 
         public SupportedLanguage Language = SupportedLanguage.Automatic;
-        public bool ShowTray = true;
-        public bool SilentRun = false;
+        public bool ShowTray = false;
+        public bool SilentRun = true;
         public bool TrayIconProgressEnabled = true;
         public bool TaskbarProgressEnabled = true;
         public bool UseWhiteShareXIcon = false;
@@ -303,10 +303,9 @@ namespace ShareX
 
         #region Actions toolbar
 
-        public List<HotkeyType> ActionsToolbarList = new List<HotkeyType>() { HotkeyType.RectangleRegion, HotkeyType.PrintScreen, HotkeyType.ScreenRecorder,
-            HotkeyType.None, HotkeyType.FileUpload, HotkeyType.ClipboardUploadWithContentViewer };
+        public List<HotkeyType> ActionsToolbarList = new List<HotkeyType>() { HotkeyType.None, HotkeyType.RectangleRegion, HotkeyType.ToggleTrayMenu };
 
-        public bool ActionsToolbarRunAtStartup = false;
+        public bool ActionsToolbarRunAtStartup = true;
 
         public Point ActionsToolbarPosition = Point.Empty;
 

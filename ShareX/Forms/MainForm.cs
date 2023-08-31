@@ -1265,7 +1265,7 @@ namespace ShareX
 
         protected override void SetVisibleCore(bool value)
         {
-            if (value && !IsHandleCreated && (Program.SilentRun || Program.Settings.SilentRun) && Program.Settings.ShowTray)
+            if (value && !IsHandleCreated && (Program.SilentRun || Program.Settings.SilentRun) /*&& Program.Settings.ShowTray*/)
             {
                 CreateHandle();
                 value = false;
@@ -1313,7 +1313,7 @@ namespace ShareX
 
         private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if (e.CloseReason == CloseReason.UserClosing && Program.Settings.ShowTray && !forceClose)
+            if (e.CloseReason == CloseReason.UserClosing && /*Program.Settings.ShowTray &&*/ !forceClose)
             {
                 e.Cancel = true;
                 Hide();

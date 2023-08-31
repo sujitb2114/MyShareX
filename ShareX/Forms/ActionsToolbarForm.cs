@@ -94,7 +94,7 @@ namespace ShareX
                 GripStyle = ToolStripGripStyle.Hidden,
                 Location = new Point(1, 1),
                 Margin = new Padding(1),
-                MinimumSize = new Size(10, 30),
+                MinimumSize = new Size(15, 45),
                 Padding = new Padding(0, 1, 0, 0),
                 Renderer = new ToolStripRoundedEdgeRenderer(),
                 TabIndex = 0,
@@ -296,6 +296,7 @@ namespace ShareX
             ToolStripLabel tslTitle = new ToolStripLabel()
             {
                 Margin = new Padding(4, 0, 3, 0),
+                Font = new Font(this.Font.FontFamily, 16),
                 Text = "ShareX",
                 ToolTipText = Resources.ActionsToolbar_Tip
             };
@@ -326,6 +327,7 @@ namespace ShareX
                         DisplayStyle = ToolStripItemDisplayStyle.Image,
                         Image = TaskHelpers.FindMenuIcon(action)
                     };
+                    tsMain.ImageScalingSize = new Size(36, 36);
 
                     tsb.Click += async (sender, e) =>
                     {
